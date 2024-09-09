@@ -239,7 +239,7 @@ public class FailsafeManager {
                         FailsafeUtils.bringWindowToFrontUsingRobot();
                         System.out.println("Bringing window to front using Robot because Winapi failed as usual.");
                     }
-                }, 750, TimeUnit.MILLISECONDS);
+                }, 9999, TimeUnit.MILLISECONDS);
 
                 LogUtils.sendFailsafeMessage(tempFailsafe.getType().label, failsafe.shouldTagEveryone());
                 BanInfoWS.getInstance().sendFailsafeInfo(tempFailsafe.getType());
